@@ -22,10 +22,7 @@ function newSrart(){
   const currentVideoTime = localStorage.getItem(timeKey);
   player
   .setCurrentTime(currentVideoTime)
-  .then(() => {
-    player.play();
-    // seconds = the actual time that the player seeked to
-  })
+
   .catch(function(error) {
     switch (error.name) {
         case 'RangeError':
