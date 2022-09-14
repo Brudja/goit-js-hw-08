@@ -36,7 +36,7 @@ function storageFromData(event){
         Object.assign(formValue, JSON.parse(localStorage.getItem(localKey)))
     }
 
-    formValue[event.target.name] = event.target.value;
+    formValue[event.target.name] = event.target.value.trim();
 
 
 
